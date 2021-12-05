@@ -10,19 +10,25 @@
         <module name="eureka-service" />
         <module name="user-consume" />
         <module name="user-service" />
+        <module name="zuul-service" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-service" target="11" />
+      <module name="gateway-service" target="11" />
       <module name="user-consume" target="11" />
       <module name="user-service" target="11" />
+      <module name="zuul-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="user-consume" options="-parameters" />
       <module name="user-service" options="-parameters" />
+      <module name="zuul-service" options="-parameters" />
     </option>
   </component>
 </project>
