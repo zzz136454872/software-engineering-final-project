@@ -6,7 +6,6 @@ import lombok.Data;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@AllArgsConstructor
 @Data
 @Table
 public class User {
