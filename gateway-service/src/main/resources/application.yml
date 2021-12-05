@@ -6,10 +6,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: user-service-route
-          uri: lb://user-service
-          predicates:
-            - Path=/user/**
+      - id: user-service-route
+        uri: lb://user-service
+        predicates:
+        - Path=/user/**
 
 eureka:
   instance:
