@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="add gateway but not working">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -16,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,6 +38,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21rI08wWphBxFw66oGRuVCRyb7K" />
   <component name="ProjectViewState">
@@ -46,20 +57,68 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.packagesearch.PackageSearchGeneralConfigurable" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\0_code\software-engineering-final-project\user-login-register\src\main\java\com\softwareengineering\userloginregister" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="XSLT" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication (1)">
+    <configuration name="EurekaServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.eurekaservice.EurekaServiceApplication" />
+      <module name="eureka-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softwareengineering.eurekaservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.gatewayservice.GatewayServiceApplication" />
+      <module name="gateway-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softwareengineering.gatewayservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="gateway-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="gateway-service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.eurekaservice.EurekaServiceApplication" />
@@ -74,9 +133,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="topic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.topic.TopicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserConsumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-consume" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.userconsume.UserConsumeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLoginRegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-login-register" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.userloginregister.UserLoginRegisterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,6 +177,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.UserServiceApplication (1)" />
+        <item itemvalue="Application.GatewayServiceApplication" />
+        <item itemvalue="Application.EurekaServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -118,6 +193,10 @@
       <workItem from="1638692557437" duration="9040000" />
       <workItem from="1638704958351" duration="843000" />
       <workItem from="1638705845012" duration="3376000" />
+      <workItem from="1639038641173" duration="1421000" />
+      <workItem from="1639102235208" duration="5522000" />
+      <workItem from="1639122303117" duration="12603000" />
+      <workItem from="1639187331090" duration="14072000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -177,7 +256,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user-service" />
@@ -187,5 +265,9 @@
     <MESSAGE value="userconsume work with eureka" />
     <MESSAGE value="add gateway but not working" />
     <option name="LAST_COMMIT_MESSAGE" value="add gateway but not working" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -9,15 +9,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
         <module name="user-consume" />
+        <module name="user-login-register" />
+        <module name="gateway-service" />
+        <module name="topic" />
         <module name="user-service" />
         <module name="zuul-service" />
-        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-service" target="11" />
       <module name="gateway-service" target="11" />
+      <module name="test" target="11" />
+      <module name="topic" target="11" />
       <module name="user-consume" target="11" />
+      <module name="user-login-register" target="11" />
       <module name="user-service" target="11" />
       <module name="zuul-service" target="11" />
     </bytecodeTargetLevel>
@@ -26,7 +31,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="test" options="-parameters" />
+      <module name="topic" options="-parameters" />
       <module name="user-consume" options="-parameters" />
+      <module name="user-login-register" options="-parameters" />
       <module name="user-service" options="-parameters" />
       <module name="zuul-service" options="-parameters" />
     </option>

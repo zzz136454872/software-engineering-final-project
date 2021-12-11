@@ -10,6 +10,10 @@ spring:
         uri: lb://user-service
         predicates:
         - Path=/user/**
+      - id: user-login-register
+        uri: lb://user-login-register
+        predicates:
+          - Path=/userlogin/**
 
 eureka:
   instance:
