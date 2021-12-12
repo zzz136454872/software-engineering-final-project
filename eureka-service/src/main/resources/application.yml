@@ -1,27 +1,19 @@
+# port
 server:
-  port: 10011
+  port: 10086
+# Eureka service name
 spring:
   application:
-    name: cloud-gateway
-  cloud:
-    gateway:
-      routes:
-      - id: user-service-route
-        uri: lb://user-service
-        predicates:
-        - Path=/user/**
-      - id: user-login-register
-        uri: lb://user-login-register
-        predicates:
-          - Path=/userlogin/**
-
+    name: eureka-server
+# put EurekaServer in service list, default to true
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
+    register-with-eureka: false
+    # fetch registry list, default to true
+    fetch-registry: false
+    # EurekaServer address
     service-url:
-      defaultZone: http://localhost:10086/eureka/
-
+      defaultZone: http://127.0.0.1:${server.port}/eureka
 logging:
   # pattern:
   #   file: ".%d{yyyy-MM-dd}.log"

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="add gateway but not working">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="let gate way to serve static files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/java/com/softwareengineering/eurekaservice/EurekaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-service/src/main/java/com/softwareengineering/eurekaservice/EurekaServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -196,7 +195,8 @@
       <workItem from="1639102235208" duration="5522000" />
       <workItem from="1639122303117" duration="12603000" />
       <workItem from="1639187331090" duration="14072000" />
-      <workItem from="1639275945068" duration="3628000" />
+      <workItem from="1639275945068" duration="4573000" />
+      <workItem from="1639295669315" duration="4796000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -240,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638708993268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="let gate way to serve static files">
+      <created>1639281377848</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639281377848</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +272,8 @@
     <MESSAGE value="eureka running" />
     <MESSAGE value="userconsume work with eureka" />
     <MESSAGE value="add gateway but not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gateway but not working" />
+    <MESSAGE value="let gate way to serve static files" />
+    <option name="LAST_COMMIT_MESSAGE" value="let gate way to serve static files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
