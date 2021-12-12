@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server" />
+    <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/UserConsumeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/UserConsumeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/controller/ConsumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/controller/ConsumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +197,7 @@
       <workItem from="1639122303117" duration="12603000" />
       <workItem from="1639187331090" duration="14072000" />
       <workItem from="1639275945068" duration="4573000" />
-      <workItem from="1639295669315" duration="5147000" />
+      <workItem from="1639295669315" duration="6875000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
