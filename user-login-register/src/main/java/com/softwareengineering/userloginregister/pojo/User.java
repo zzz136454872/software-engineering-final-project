@@ -9,10 +9,9 @@ import javax.persistence.Table;
 @Data
 @Table
 @AllArgsConstructor
-
 public class User {
     @Id
-    private int id;
+    private Long id;
     private String role;
     private String username;
     private String password;

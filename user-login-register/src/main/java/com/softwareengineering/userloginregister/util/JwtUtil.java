@@ -7,6 +7,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
@@ -51,7 +52,7 @@ public class JwtUtil {
     public static String getUsername(String token) {
         try {
             DecodedJWT jwt = JWT.decode(token);
-            return jwt.getClaim("loginName").asString();
+            return jwt.getClaim("username").asString();
         } catch (JWTDecodeException e) {
             return null;
         }
@@ -65,7 +66,21 @@ public class JwtUtil {
     public static String getUserId(String token) {
         try {
             DecodedJWT jwt = JWT.decode(token);
-            return jwt.getClaim("userId").asString();
+            return jwt.getClaim("id").asString();
+        } catch (JWTDecodeException e) {
+            return null;
+        }
+    }
+
+    /**
+     * 获取登陆用户角色
+     * @param token
+     * @return
+     */
+    public static String getRole(String token) {
+        try {
+            DecodedJWT jwt = JWT.decode(token);
+            return jwt.getClaim("role").asString();
         } catch (JWTDecodeException e) {
             return null;
         }
@@ -77,7 +92,7 @@ public class JwtUtil {
      * @param username 用户名
      * @return 加密的token
      */
-    public static String sign(String username,int userId) {
+    public static String sign(String username, Long userId, String role) {
         try {
 //            过期时间
             Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
@@ -90,8 +105,9 @@ public class JwtUtil {
             // 附带username，userId信息，生成签名
             return JWT.create()
                     .withHeader(header)
-                    .withClaim("loginName", username)
-                    .withClaim("userId",userId)
+                    .withClaim("username", username)
+                    .withClaim("id",userId)
+                    .withClaim("role",role)
                     .withExpiresAt(date)
                     .sign(algorithm);
         } catch (UnsupportedEncodingException e) {
