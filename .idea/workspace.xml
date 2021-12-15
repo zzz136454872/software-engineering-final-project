@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/detail.0275adf9.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/detail.0275adf9.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/index.513f0d6c.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/index.513f0d6c.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/my-topic.4a0799a4.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/my-topic.4a0799a4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/plugin-vue_export-helper.5a098b48.js" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/plugin-vue_export-helper.5a098b48.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/reset.af122ebd.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/reset.af122ebd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-list.a0358b0b.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-list.a0358b0b.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor-quasar.6eb31128.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor-quasar.6eb31128.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor.eaccca63.css" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor.eaccca63.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +22,7 @@
         <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,6 +57,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway-service/target/classes/static" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -87,6 +78,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\0_code\software-engineering-final-project\user-login-register\src\main\java\com\softwareengineering\userloginregister" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.softwareengineering.userloginregister.controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -96,20 +93,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication (1)">
-    <configuration name="EurekaServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.eurekaservice.EurekaServiceApplication" />
-      <module name="eureka-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.softwareengineering.eurekaservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserControllerTest">
     <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.softwareengineering.gatewayservice.GatewayServiceApplication" />
       <module name="gateway-service" />
@@ -119,6 +103,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-login-register" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softwareengineering.userloginregister.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.softwareengineering.userloginregister.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.userloginregister.controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.signin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-login-register" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softwareengineering.userloginregister.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.softwareengineering.userloginregister.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.userloginregister.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="signin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.signinSuccessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-login-register" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.softwareengineering.userloginregister.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.softwareengineering.userloginregister.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.softwareengineering.userloginregister.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="signinSuccessTest(org.springframework.test.web.servlet.MockMvc)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,9 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.signinSuccessTest" />
+        <item itemvalue="JUnit.UserControllerTest.signin" />
         <item itemvalue="Spring Boot.UserServiceApplication (1)" />
         <item itemvalue="Application.GatewayServiceApplication" />
-        <item itemvalue="Application.EurekaServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +239,7 @@
       <workItem from="1639380918950" duration="4956000" />
       <workItem from="1639404346000" duration="5586000" />
       <workItem from="1639458326537" duration="30828000" />
+      <workItem from="1639532419453" duration="7030000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -279,6 +313,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user-service" />
@@ -290,6 +325,20 @@
     <MESSAGE value="let gate way to serve static files" />
     <MESSAGE value="anable log_to_file for gateway and eureka server" />
     <option name="LAST_COMMIT_MESSAGE" value="anable log_to_file for gateway and eureka server" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java</url>
+          <line>34</line>
+          <properties class="com.softwareengineering.userloginregister.controller.UserControllerTest" method="signinSuccessTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
