@@ -20,38 +20,40 @@ import java.util.List;
 public class UserService {
     @Autowired
     private UserMapper userMapper;
-    public int register(User user){
+    /*
+    public HttpStatus register(User user){
         //String role = user.getRole();
         if (!user.getRole().equals("student") || !user.getRole().equals("teacher")){
             //不能注册管理员
-            return 501;
+            return HttpStatus.BAD_REQUEST;
         }
 
         int userNum = queryNumByUsername(user.getUsername());
         if (userNum != 0){
             //用户名重复
-            return 502;
+            return HttpStatus.BAD_REQUEST;
         }
         String pw = user.getPassword();
         if (pw == null || pw.length() < 6){
             //密码长度过短
-            return 503;
+            return HttpStatus.BAD_REQUEST;
         }
         //应该存入密码的Hash值
         user.setPassword(SHA(user.getPassword(), "SHA-256"));
         if (userMapper.insertSelective(user)!=0){
             //插入成功
-            return 200;
+            return HttpStatus.OK;
         }else{
             //插入失败
-            return 504;
+            return HttpStatus.INTERNAL_SERVER_ERROR;
         }
     }
+    */
 
     public long createUser(User user){
         List<User> num = this.userMapper.selectAll();
         //设置合适的id，id肯定为 [1,all_num+1]之间的一个
-        for(int i=0;i<=num.size();i++){
+        for(int i=1;i<=num.size();i++){
             if(this.userMapper.selectByPrimaryKey(i)==null){
                 long id = (int) i;
                 user.setId(id);
@@ -126,8 +128,7 @@ public class UserService {
         List<User> intact_user_list = this.userMapper.select(user);
         User intact_user = intact_user_list.get(0);
 
-        //正确
-        String token = JwtUtil.sign(user.getName(), intact_user.getId(), intact_user.getRole());
+        String token = JwtUtil.sign(intact_user.getUsername(), intact_user.getId(), intact_user.getRole());
         if (token == null) {
             login_response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR);
             return login_response;
@@ -140,30 +141,19 @@ public class UserService {
 
     }
 
-    public int update(User user, String token){
-        //主键不能为空，角色不能更新
-        if(user.getId()==0 || user.getRole()!=null){
-            return 501;
+    public HttpStatus updateUserPassword(Long id, String oldPwd, String newPwd){
+        User user = this.userMapper.selectByPrimaryKey(id);
+        if(user == (User) null){
+            return HttpStatus.BAD_REQUEST;
         }
-
-        JwtUtil jwtUtil = new JwtUtil();
-
-        if(!jwtUtil.getUsername(token).equals(String.valueOf(user.getId())) || !jwtUtil.getUserId(token).equals(user.getId())){
-            return 502;
+        if(!user.getPassword().equals(oldPwd)){
+            return HttpStatus.UNAUTHORIZED;
         }
+        user.setPassword(newPwd);
 
-        boolean b = jwtUtil.verify(token);
-        if(b==false){
-            //token验证失败
-            return 503;
-        }
-
-        if(user.getPassword()!=null){
-            user.setPassword(SHA(user.getPassword(), "SHA-256"));
-        }
         //根据主键更新属性不为null的值
-        int res = this.userMapper.updateByPrimaryKeySelective(user);
-        return 200;
+        this.userMapper.updateByPrimaryKeySelective(user);
+        return HttpStatus.OK;
     }
 
     public boolean tokenVerify(String username, int userId, String role, String token){
@@ -194,10 +184,6 @@ public class UserService {
         List<User> res = this.userMapper.select(user);
         return res.get(0).getId();
     }
-
-
-
-
 
 
     private String SHA(final String strText, final String strType) {

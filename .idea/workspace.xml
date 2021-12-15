@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/topic/src/test/java/com/softwareengineering/topic/controller/TopicControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/someuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/someuser.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/topic.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/topic.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/user.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/topic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/TopicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/TopicApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/mapper/TopicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/mapper/TopicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/pojo/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +96,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.softwareengineering.topic.controller" />
       <recent name="com.softwareengineering.userloginregister.controller" />
     </key>
   </component>
@@ -240,6 +255,7 @@
       <workItem from="1639404346000" duration="5586000" />
       <workItem from="1639458326537" duration="30828000" />
       <workItem from="1639532419453" duration="7030000" />
+      <workItem from="1639551137851" duration="21598000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -313,7 +329,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user-service" />
@@ -334,8 +349,9 @@
           <line>34</line>
           <properties class="com.softwareengineering.userloginregister.controller.UserControllerTest" method="signinSuccessTest">
             <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

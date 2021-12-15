@@ -25,9 +25,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    //@PostMapping("/update")
-    public ResponseEntity<Long> createUser(@RequestBody User user) throws Exception {
+    @PostMapping("")
+    public ResponseEntity<Long> createUser(@RequestBody User user, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        JwtUtil jwtUtil = new JwtUtil();
+        if(!jwtUtil.verify(token)){
+            //token验证不通过
+            return new ResponseEntity<Long>(-1L,HttpStatus.UNAUTHORIZED);
+        }
         return new ResponseEntity<Long>(this.userService.createUser(user), HttpStatus.OK);
     }
 
@@ -66,7 +71,10 @@ public class UserController {
             //token验证不通过
             return new ResponseEntity<User>((User) null,HttpStatus.UNAUTHORIZED);
         }
-
+        if(!jwtUtil.getRole(token).equals("管理员")){
+            //管理员才可以删除
+            return new ResponseEntity<List<User>>((List<User>) null,HttpStatus.UNAUTHORIZED);
+        }
         this.userService.deleteUserById(userId);
         return new ResponseEntity(HttpStatus.OK);
     }
@@ -77,7 +85,6 @@ public class UserController {
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
-            System.out.println("gg");
             return new ResponseEntity<List<User>>((List<User>) null,HttpStatus.UNAUTHORIZED);
         }
         List<User> users = this.userService.getUserByIds(id_list);
@@ -90,62 +97,18 @@ public class UserController {
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
-            return new ResponseEntity<List<User>>((List<User>) null,HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }
         if(!jwtUtil.getRole(token).equals("管理员")){
-            return new ResponseEntity<List<User>>((List<User>) null,HttpStatus.UNAUTHORIZED);
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }
         return new ResponseEntity(this.userService.deleteUserByIds(id_list));
     }
 
-    @GetMapping("/aaa")
-    public List<User> login_exm(@RequestParam("ids") List<Long> ids, HttpServletResponse response, @CookieValue(value="mycookie", defaultValue="") String myOldCookie) {
-
-        response.addCookie(new Cookie("mycookie","test"));
-        response.addCookie(new Cookie("mycookie1","test1"));
-        if (!myOldCookie.equals("")) {
-            response.addCookie(new Cookie("lastcookie",myOldCookie));
-        }
-        return this.userService.getUserByIds(ids);
-    }
-
-
-
-
-
-
-    @PostMapping("/update")
-    public int update(HttpServletRequest request, HttpServletResponse response, @CookieValue(value="token", defaultValue="") String myCookie) {
-        //String req = request.getQueryString();
-        String id_str = request.getParameter("id");
-        Long id = null;
-        try {
-            id = Long.parseLong(id_str);
-        } catch (NumberFormatException e) {
-            e.printStackTrace();
-        }
-        //int id = queryString.
-        User user= new User();
-        user.setId(id);
-        user.setRole(request.getParameter("role"));
-        user.setUsername(request.getParameter("username"));
-        user.setPassword(request.getParameter("password"));
-        user.setName(request.getParameter("name"));
-        user.setGender(request.getParameter("gender"));
-        user.setJobNum(request.getParameter("jobNum"));
-        user.setStudentClass(request.getParameter("studentClass"));
-        user.setTitle(request.getParameter("title"));
-        user.setMajor(request.getParameter("major"));
-        user.setEmail(request.getParameter("email"));
-        user.setResume(request.getParameter("resume"));
-
-        return this.userService.update(user, myCookie);
-    }
-
     @GetMapping("/signin")
     public ResponseEntity<User> signin(@RequestParam(name = "username", required = true) String username,
-                             @RequestParam(name = "password", required = true) String password,
-                             HttpServletResponse response
+                                       @RequestParam(name = "password", required = true) String password,
+                                       HttpServletResponse response
     ) {
         User user= new User();
         user.setUsername(username);
@@ -153,15 +116,68 @@ public class UserController {
 
         Login res = this.userService.login(user);
 
-        //System.out.println("inside "+res);
         if(res.getStatus().equals(HttpStatus.OK)) {
-            response.addCookie(new Cookie("token",res.getToken()));
+            Cookie tokenCookie = new Cookie("token",res.getToken());
+            tokenCookie.setPath("/");//设置作用域
+            response.addCookie(tokenCookie);
+
         }
 
         return new ResponseEntity<User>(res.getUser(),res.getStatus());
     }
 
+    @GetMapping("/signout")
+    public ResponseEntity signout(@RequestParam(name = "username", required = true) String username,
+                                  HttpServletRequest request,
+                                  HttpServletResponse response
+    ) throws Exception {
+        request.getSession().removeAttribute("token");
+        request.getSession().invalidate();
+        return new ResponseEntity(HttpStatus.OK);
+    }
 
+    @PostMapping("/password")
+    public ResponseEntity<Void> updateUserPassword(@RequestBody Map<String, Object> data,
+                                                   //@RequestParam(name = "userId", required = true) Integer userId,
+                                                   //@RequestParam(name = "oldPwd", required = true) String oldPwd,
+                                                   //@RequestParam(name = "newPwd", required = true) String newPwd,
+                                                   @CookieValue(value="token", defaultValue="") String token) throws Exception {
+        // do some magic!
+        log.info("updateUserPassword");
+
+
+        long userId = Long.valueOf(data.get("userId").toString());
+        String oldPwd = (String)data.get("oldPwd");
+        String newPwd = (String)data.get("newPwd");
+
+        JwtUtil jwtUtil = new JwtUtil();
+        if(!jwtUtil.verify(token)){
+            //token验证不通过
+            return new ResponseEntity<Void>(HttpStatus.UNAUTHORIZED);
+        }
+
+        //if(jwtUtil.getUserId(token)!=userId){
+        //    return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
+        //}
+        return new ResponseEntity<Void>(this.userService.updateUserPassword(userId, oldPwd, newPwd));
+    }
+
+    @GetMapping("/token")
+    public Boolean tokenVerfiy(@RequestParam(name = "token", required = true) String token){
+        log.info("token verfiy is called");
+        JwtUtil jwtUtil = new JwtUtil();
+        Boolean res = jwtUtil.verify(token);
+        return res;
+    }
+
+    @GetMapping("/token/role")
+    public String getTokenRole(@RequestParam(name = "token", required = true) String token){
+        log.info("get Token role is called");
+        JwtUtil jwtUtil = new JwtUtil();
+        return jwtUtil.getRole(token);
+    }
+
+    /*
     //register
     @PostMapping("/register")
     public int register(@RequestBody Map<String, Object> data) {
@@ -183,5 +199,7 @@ public class UserController {
 
         return this.userService.register(user);
     }
+    */
+
 
 }

@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-
+@Slf4j
 public class JwtUtil {
     /**
      * 过期时间一天，

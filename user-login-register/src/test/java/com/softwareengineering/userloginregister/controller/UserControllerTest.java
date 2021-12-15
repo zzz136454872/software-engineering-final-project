@@ -45,7 +45,7 @@ class UserControllerTest {
     void signinFailTest(@Autowired MockMvc mvc) throws Exception {
         mvc.perform(get("/user/signin")
                         .param("username","student1")
-                        .param("password","509e87a6c45ee0a3c657bf946dd6dc45d7e5502143be195280f279002e70f7d9"))
+                        .param("password","509e87a69002e70f7d9"))
                 .andExpect(status().is4xxClientError());
     }
 

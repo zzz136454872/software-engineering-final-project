@@ -35,6 +35,7 @@ CREATE TABLE `user`  (
   `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '邮箱地址，作为公开信息展示',
   `resume` varchar(1024) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '个人简介，作为公开信息展示',
   PRIMARY KEY (`id`) USING BTREE
+  UNIQUE (`username`)
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '管理员的账号直接预置，没有的属性随便写个值吧' ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;

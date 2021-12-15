@@ -33,8 +33,8 @@
       <module name="gateway-service" options="-parameters" />
       <module name="test" options="-parameters" />
       <module name="topic" options="-parameters" />
-      <module name="user-consume" options="-parameters --add-modules java.base" />
-      <module name="user-login-register" options="-parameters --add-modules java.base" />
+      <module name="user-consume" options="-parameters" />
+      <module name="user-login-register" options="-parameters" />
       <module name="user-service" options="-parameters" />
       <module name="zuul-service" options="-parameters" />
     </option>

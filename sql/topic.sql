@@ -32,6 +32,8 @@ CREATE TABLE `topic`  (
   `create_time` datetime NOT NULL COMMENT '创建时间戳',
   `update_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间戳',
   PRIMARY KEY (`id`) USING BTREE
+  UNIQUE (`teacher_id`)
+  UNIQUE (`student_id`)
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
