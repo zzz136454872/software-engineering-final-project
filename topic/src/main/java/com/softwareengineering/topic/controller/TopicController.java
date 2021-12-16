@@ -18,11 +18,16 @@ public class TopicController {
     @Autowired
     private TopicService topicService;
 
+    /**
+     * 创建一个课题
+     * @param topic 要创建的课题
+     * @param token cookie中的token
+     * @return
+     * @throws Exception
+     */
     @PostMapping("")
     public ResponseEntity<Long> createTopic(@RequestBody Topic topic,
                                             @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        // 创建一个课题
         log.info("create a topic");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
@@ -32,10 +37,15 @@ public class TopicController {
         return new ResponseEntity<Long>(this.topicService.createTopic(topic),HttpStatus.OK);
     }
 
+    /**
+     * 根据topicId查询一个课题
+     * @param topicId 要查询的课题id
+     * @param token cookie中的token
+     * @return
+     * @throws Exception
+     */
     @GetMapping("/{topicId}")
     public ResponseEntity<Topic> getTopic(@PathVariable("topicId") Long topicId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        // 根据topicId查询一个课题
         log.info("get topic by topicId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
@@ -45,9 +55,16 @@ public class TopicController {
         return new ResponseEntity<Topic>(this.topicService.getTopicById(topicId),HttpStatus.OK);
     }
 
+    /**
+     * 更新一个课题的信息
+     * @param topic 新的课题信息
+     * @param topicId 被更新的课题id
+     * @param token cookie中的token
+     * @return
+     * @throws Exception
+     */
     @PutMapping("/{topicId}")
     public ResponseEntity updateTopic(@RequestBody Topic topic,@PathVariable("topicId") Long topicId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
         log.info("update Topic by topicId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
@@ -126,7 +143,7 @@ public class TopicController {
         Topic topic = this.topicService.getTopicByTeacherId(userId);
 
         if(topic == ((Topic) null)){
-            return new ResponseEntity<Topic>((Topic) null, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<Topic>((Topic) null, HttpStatus.BAD_REQUEST);
         }
 
         return new ResponseEntity<Topic>(topic,HttpStatus.OK);

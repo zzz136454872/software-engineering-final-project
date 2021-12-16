@@ -46,7 +46,7 @@ public class JwtUtil {
 
     /**
      * 获得token中的信息无需secret解密也能获得
-     *
+     * @param token
      * @return token中包含的用户名
      */
     public static String getUsername(String token) {
@@ -59,7 +59,7 @@ public class JwtUtil {
     }
 
     /**
-     * 获取登陆用户ID
+     * 获取登录用户ID
      * @param token
      * @return
      */
@@ -73,7 +73,7 @@ public class JwtUtil {
     }
 
     /**
-     * 获取登陆用户角色
+     * 获取登录用户角色
      * @param token
      * @return
      */

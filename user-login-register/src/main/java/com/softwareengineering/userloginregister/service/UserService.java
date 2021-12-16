@@ -53,8 +53,8 @@ public class UserService {
     public long createUser(User user){
         List<User> num = this.userMapper.selectAll();
         //设置合适的id，id肯定为 [1,all_num+1]之间的一个
-        for(int i=1;i<=num.size();i++){
-            if(this.userMapper.selectByPrimaryKey(i)==null){
+        for(int i=1;i<=num.size()+1;i++){
+            if(this.userMapper.selectByPrimaryKey(i)==(User) null){
                 long id = (int) i;
                 user.setId(id);
                 this.userMapper.insert(user);

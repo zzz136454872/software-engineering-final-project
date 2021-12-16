@@ -28,6 +28,7 @@ public class UserController {
     @PostMapping("")
     public ResponseEntity<Long> createUser(@RequestBody User user, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        log.info("create a new user");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -39,6 +40,7 @@ public class UserController {
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUser(@PathVariable("userId") Long userId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        log.info("get a user by userid");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -52,7 +54,7 @@ public class UserController {
     @PutMapping("/{userId}")
     public ResponseEntity updateUser(@RequestBody User user,@PathVariable("userId") Long userId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
-        log.info("updateUser");
+        log.info("update a user information");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -66,6 +68,7 @@ public class UserController {
     @DeleteMapping("/{userId}")
     public ResponseEntity deleteUser(@PathVariable("userId") Long userId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        log.info("deleta a user");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -82,6 +85,7 @@ public class UserController {
     @GetMapping("/list")
     public ResponseEntity<List<User>> getUsers(@RequestParam(name = "id", required = false) List<Long> id_list, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        log.info("get some users information");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -94,6 +98,7 @@ public class UserController {
     @DeleteMapping("/list")
     public ResponseEntity deleteUsers(@RequestBody List<Long> id_list, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
+        log.info("delete some users");
         JwtUtil jwtUtil = new JwtUtil();
         if(!jwtUtil.verify(token)){
             //token验证不通过
@@ -110,6 +115,7 @@ public class UserController {
                                        @RequestParam(name = "password", required = true) String password,
                                        HttpServletResponse response
     ) {
+        log.info("a user login");
         User user= new User();
         user.setUsername(username);
         user.setPassword(password);
@@ -131,6 +137,7 @@ public class UserController {
                                   HttpServletRequest request,
                                   HttpServletResponse response
     ) throws Exception {
+        log.info("a user logout");
         request.getSession().removeAttribute("token");
         request.getSession().invalidate();
         return new ResponseEntity(HttpStatus.OK);
@@ -143,8 +150,7 @@ public class UserController {
                                                    //@RequestParam(name = "newPwd", required = true) String newPwd,
                                                    @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
-        log.info("updateUserPassword");
-
+        log.info("update a user password");
 
         long userId = Long.valueOf(data.get("userId").toString());
         String oldPwd = (String)data.get("oldPwd");
@@ -172,7 +178,7 @@ public class UserController {
 
     @GetMapping("/token/role")
     public String getTokenRole(@RequestParam(name = "token", required = true) String token){
-        log.info("get Token role is called");
+        log.info("get token role is called");
         JwtUtil jwtUtil = new JwtUtil();
         return jwtUtil.getRole(token);
     }
