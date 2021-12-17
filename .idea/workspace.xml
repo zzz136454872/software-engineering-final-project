@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sometopic.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sometopic.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +246,7 @@
       <workItem from="1639532419453" duration="7030000" />
       <workItem from="1639551137851" duration="21598000" />
       <workItem from="1639621533129" duration="20524000" />
-      <workItem from="1639709399213" duration="13125000" />
+      <workItem from="1639709399213" duration="13517000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
