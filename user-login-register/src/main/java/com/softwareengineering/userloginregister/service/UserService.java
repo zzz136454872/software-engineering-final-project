@@ -85,7 +85,7 @@ public class UserService {
         // 获取ip和端口信息
         // String baseUrl = "http://"+instance.getHost() + ":" + instance.getPort()+"/user/";
         //String baseUrl = "http://user-service/user/";
-        if(ids==null){
+        if(ids==null || ids.size()==0){
             //如果ids为空，则返回全部列表
             return this.userMapper.selectAll();
         }

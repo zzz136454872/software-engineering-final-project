@@ -34,6 +34,9 @@ public class UserController {
             //token验证不通过
             return new ResponseEntity<Long>(-1L,HttpStatus.UNAUTHORIZED);
         }
+        if(!jwtUtil.getRole(token).equals("管理员")){
+            return new ResponseEntity<Long>(-1L,HttpStatus.UNAUTHORIZED);
+        }
         return new ResponseEntity<Long>(this.userService.createUser(user), HttpStatus.OK);
     }
 
@@ -84,6 +87,19 @@ public class UserController {
 
     @GetMapping("/list")
     public ResponseEntity<List<User>> getUsers(@RequestParam(name = "id", required = false) List<Long> id_list, @CookieValue(value="token", defaultValue="") String token) throws Exception {
+        // do some magic!
+        log.info("get some users information");
+        JwtUtil jwtUtil = new JwtUtil();
+        if(!jwtUtil.verify(token)){
+            //token验证不通过
+            return new ResponseEntity<List<User>>((List<User>) null,HttpStatus.UNAUTHORIZED);
+        }
+        List<User> users = this.userService.getUserByIds(id_list);
+        return new ResponseEntity<List<User>>(users,HttpStatus.OK);
+    }
+
+    @PostMapping("/list")
+    public ResponseEntity<List<User>> postUsers(@RequestBody List<Long> id_list, @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
         log.info("get some users information");
         JwtUtil jwtUtil = new JwtUtil();

@@ -2,6 +2,7 @@ package com.softwareengineering.topic.controller;
 
 
 import com.softwareengineering.topic.pojo.Topic;
+import com.softwareengineering.topic.pojo.setTopic;
 import com.softwareengineering.topic.service.TopicService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,8 +110,9 @@ public class TopicController {
     }
 
     @PostMapping("/choose")
-    public ResponseEntity<Void> setChosenTopic(@RequestParam(name = "userId", required = true) Long userId,
-                                               @RequestParam(name = "topicId", required = true) Long topicId,
+    public ResponseEntity<Void> setChosenTopic(//@RequestParam(name = "userId", required = true) Long userId,
+                                               //@RequestParam(name = "topicId", required = true) Long topicId,
+                                               @RequestBody setTopic topic,
                                                @CookieValue(value="token", defaultValue="") String token) throws Exception {
         // do some magic!
         // 学生选择一个课题
@@ -120,11 +122,11 @@ public class TopicController {
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }
 
-        if(this.topicService.getTokenRole(token).equals("学生")){
+        if(!this.topicService.getTokenRole(token).equals("学生")){
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         }
 
-        return new ResponseEntity<>(this.topicService.setChosenTopic(userId,topicId));
+        return new ResponseEntity<>(this.topicService.setChosenTopic(topic.getUserId(),topic.getTopicId()));
     }
 
     @GetMapping("/publish")
