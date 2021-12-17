@@ -5,16 +5,128 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_2_10_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/someuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/someuser.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/_...all_.7529c645.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/bootstrap-icons.6e30be95.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/bootstrap-icons.fba9931a.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/bysj.edcc76b4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/center.8882f097.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/detail.0275adf9.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/detail.78973175.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/home.7a86d466.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/home.fe756c5e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/index.513f0d6c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/index.f9b84f9a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/my-topic.4a0799a4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/my-topic.6c74593e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/notice.3014bf9b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/plugin-vue_export-helper.5a098b48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/reset.0cd9b170.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/reset.af122ebd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/selected-student.45b5b3b1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/selected-student.8c1c9c2b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/selected-topic.73c4174a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/sign.5fcb5f25.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/sign.b0ede596.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/system.bf2ef8d2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/system.f94ea120.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-content.660e02f0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-content.fb474ff8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-list.a0358b0b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic-list.c12614f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic.06152b90.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/topic.9422e216.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/user.43b2f9cf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/user.460f4a2c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/user.53d56c55.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/user.d0728c60.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/user.f7eaef65.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor-quasar.6eb31128.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor-quasar.d7e21608.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor.eaccca63.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/assets/vendor.ef13a948.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/static/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/topic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/UserConsumeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/controller/ConsumeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/java/com/softwareengineering/userconsume/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-consume/src/test/java/com/softwareengineering/userconsume/UserConsumeApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/softwareengineering/userservice/UserServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/softwareengineering/userservice/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/softwareengineering/userservice/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/softwareengineering/userservice/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/softwareengineering/userservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/softwareengineering/userservice/UserServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/src/main/java/com/softwareengineering/zuulservice/ZuulServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-service/src/test/java/com/softwareengineering/zuulservice/ZuulServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +188,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\target\classes\static" />
+      <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\src\main\resources\static" />
+      <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\src\main\resources" />
       <recent name="D:\0_code\software-engineering-final-project\gateway-service\target\classes\static" />
       <recent name="D:\0_code\software-engineering-final-project\gateway-service\src\main\resources\static" />
-      <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\0_code\software-engineering-final-project\user-login-register\src\main\java\com\softwareengineering\userloginregister" />
@@ -160,6 +274,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="user-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="user-service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.eurekaservice.EurekaServiceApplication" />
@@ -181,36 +308,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserConsumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="user-consume" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.userconsume.UserConsumeApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserLoginRegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-login-register" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.userloginregister.UserLoginRegisterApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="user-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.softwareengineering.userservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.userservice.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZuulServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="zuul-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.zuulservice.ZuulServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,7 +320,6 @@
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserControllerTest.signinSuccessTest" />
         <item itemvalue="JUnit.UserControllerTest.signin" />
-        <item itemvalue="Spring Boot.UserServiceApplication (1)" />
         <item itemvalue="Application.GatewayServiceApplication" />
       </list>
     </recent_temporary>
@@ -248,6 +347,7 @@
       <workItem from="1639532419453" duration="7030000" />
       <workItem from="1639551137851" duration="21598000" />
       <workItem from="1639621533129" duration="15807000" />
+      <workItem from="1639736924308" duration="2190000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -321,6 +421,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user-service" />

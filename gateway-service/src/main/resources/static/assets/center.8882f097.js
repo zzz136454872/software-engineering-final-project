@@ -1,1 +1,0 @@
-import{_ as r}from"./plugin-vue_export-helper.5a098b48.js";import{F as o,I as t,M as n,H as c}from"./vendor.ef13a948.js";const s={},a={class:"flex flex-center fullscreen"};function _(l,f){const e=o("router-view");return c(),t("div",a,[n(e)])}var m=r(s,[["render",_]]);export{m as default};
