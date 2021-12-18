@@ -38,7 +38,7 @@ public class TopicService {
     public long createTopic(Topic topic){
         List<Topic> num = this.topicMapper.selectAll();
         //设置合适的id，id肯定为 [1,all_num+1]之间的一个
-        for(int i=1;i<=num.size();i++){
+        for(int i=1;i<=num.size()+1;i++){
             if(this.topicMapper.selectByPrimaryKey(i)==null){
                 long id = (int) i;
                 topic.setId(id);

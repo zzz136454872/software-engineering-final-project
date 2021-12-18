@@ -6,7 +6,6 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.UnsupportedEncodingException;
@@ -18,7 +17,6 @@ import java.util.Map;
 public class JwtUtil {
     /**
      * 过期时间一天，
-     * TODO 正式运行时修改为15分钟
      */
     private static final long EXPIRE_TIME = 24 * 60 * 60 * 1000;
     /**

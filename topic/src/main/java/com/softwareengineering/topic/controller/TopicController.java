@@ -1,6 +1,5 @@
 package com.softwareengineering.topic.controller;
 
-
 import com.softwareengineering.topic.pojo.Topic;
 import com.softwareengineering.topic.pojo.setTopic;
 import com.softwareengineering.topic.service.TopicService;
@@ -21,6 +20,7 @@ public class TopicController {
 
     /**
      * 创建一个课题
+     * create a topic
      * @param topic 要创建的课题
      * @param token cookie中的token
      * @return
@@ -29,7 +29,6 @@ public class TopicController {
     @PostMapping("")
     public ResponseEntity<Long> createTopic(@RequestBody Topic topic,
                                             @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        log.info("create a topic");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<Long>(-1L, HttpStatus.UNAUTHORIZED);
@@ -40,6 +39,7 @@ public class TopicController {
 
     /**
      * 根据topicId查询一个课题
+     * get topic by topicId
      * @param topicId 要查询的课题id
      * @param token cookie中的token
      * @return
@@ -47,7 +47,6 @@ public class TopicController {
      */
     @GetMapping("/{topicId}")
     public ResponseEntity<Topic> getTopic(@PathVariable("topicId") Long topicId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        log.info("get topic by topicId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<Topic>((Topic) null, HttpStatus.UNAUTHORIZED);
@@ -58,6 +57,7 @@ public class TopicController {
 
     /**
      * 更新一个课题的信息
+     * update Topic by topicId
      * @param topic 新的课题信息
      * @param topicId 被更新的课题id
      * @param token cookie中的token
@@ -66,7 +66,6 @@ public class TopicController {
      */
     @PutMapping("/{topicId}")
     public ResponseEntity updateTopic(@RequestBody Topic topic,@PathVariable("topicId") Long topicId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        log.info("update Topic by topicId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -76,10 +75,15 @@ public class TopicController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
+    /**
+     * get Topics by topicIds
+     * @param id_list
+     * @param token
+     * @return
+     * @throws Exception
+     */
     @GetMapping("/list")
     public ResponseEntity<List<Topic>> getTopics(@RequestParam(name = "id", required = false) List<Long> id_list, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        log.info("get Topics by topicIds");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -88,12 +92,17 @@ public class TopicController {
         return new ResponseEntity<List<Topic>>(topics,HttpStatus.OK);
     }
 
+    /**
+     * get choose topic by userId
+     * 这里的userId实际上是student_id
+     * 学生查看已选课题
+     * @param studentId
+     * @param token
+     * @return
+     * @throws Exception
+     */
     @GetMapping("/choose")
     public ResponseEntity<Topic> getChosenTopic(@RequestParam(name = "userId", required = true) Long studentId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        // 这里的userId实际上是student_id
-        // 学生查看已选课题
-        log.info("get choose topic by userId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<Topic>((Topic) null, HttpStatus.UNAUTHORIZED);
@@ -109,14 +118,19 @@ public class TopicController {
         return new ResponseEntity<Topic>(topic,HttpStatus.OK);
     }
 
+    /**
+     * student choose a topic by userId and topicId
+     * 学生选择一个课题
+     * @param topic
+     * @param token
+     * @return
+     * @throws Exception
+     */
     @PostMapping("/choose")
     public ResponseEntity<Void> setChosenTopic(//@RequestParam(name = "userId", required = true) Long userId,
                                                //@RequestParam(name = "topicId", required = true) Long topicId,
                                                @RequestBody setTopic topic,
                                                @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        // 学生选择一个课题
-        log.info("student choose a topic by userId and topicId");
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -129,14 +143,17 @@ public class TopicController {
         return new ResponseEntity<>(this.topicService.setChosenTopic(topic.getUserId(),topic.getTopicId()));
     }
 
+    /**
+     * get publish topic by userdId"
+     * 老师查询一个课题
+     * 这里的userId实际上是teacher_id
+     * @param userId
+     * @param token
+     * @return
+     * @throws Exception
+     */
     @GetMapping("/publish")
     public ResponseEntity<Topic> getPublishedTopic(@RequestParam(name = "userId", required = true) Long userId, @CookieValue(value="token", defaultValue="") String token) throws Exception {
-        // do some magic!
-        // 这里的userId实际上是teacher_id
-
-        // 老师查询一个课题
-        log.info("get publish topic by userdId");
-        log.info("token:  "+token);
         if(!this.topicService.tokenVerifyTopic(token)){
             //token验证不通过
             return new ResponseEntity<Topic>((Topic) null, HttpStatus.UNAUTHORIZED);

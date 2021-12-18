@@ -54,7 +54,11 @@ class UserControllerTest {
     Cookie studentCookie = new Cookie("token","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoi5a2m55SfIiwiaWQiOjEsImV4cCI6MTYzOTgwODAxNSwidXNlcm5hbWUiOiJzdHVkZW50MSJ9.wXLtajbElfR3xcEkAMfJ7UybtngXEOkGZH8RRrhi_cw");
     Cookie studentCookieError = new Cookie("token","eyJhbGciOiJIUzI1NiIsInVCJ9.eyJyb2xlIjoi5a2m55SfIiwiaWQiOjEsImV4cCI6MTYzOTgwODAxNSwidXNlcm5hbWUiOiJzdHVkZW50MSJ9.wXLtajbElfR3xcEkAMfJ7UybtngXEOkGZH8RRrhi_cw");
 
-    
+    /**
+     * 接口返回成功
+     * @param mvc
+     * @throws Exception
+     */
     @Test
     void createUserSuccessTest(@Autowired MockMvc mvc) throws Exception {
         mvc.perform(post("/user")

@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0edaf236-095c-44a8-a804-300e4ce4c1c8" name="Changes" comment="anable log_to_file for gateway and eureka server">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/pojo/setTopic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/sometopic.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sometopic.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/someuser.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/someuser.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/controller/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/java/com/softwareengineering/topic/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/topic/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/java/com/softwareengineering/userloginregister/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-login-register/src/test/java/com/softwareengineering/userloginregister/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway-service/target/classes/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway-service/src/main/resources/static" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,11 +75,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\0_code\software-engineering-final-project\gateway-service\src\main\resources\static" />
       <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\target\classes\static" />
       <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\src\main\resources\static" />
       <recent name="E:\高等软件工程\bhw\software-engineering-final-project\gateway-service\src\main\resources" />
       <recent name="D:\0_code\software-engineering-final-project\gateway-service\target\classes\static" />
-      <recent name="D:\0_code\software-engineering-final-project\gateway-service\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\0_code\software-engineering-final-project\user-login-register\src\main\java\com\softwareengineering\userloginregister" />
@@ -101,7 +100,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.createUserSuccessTest">
+  <component name="RunManager" selected="JUnit.UserControllerTest">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="user-login-register" />
       <extension name="coverage">
@@ -222,20 +221,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZuulServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="zuul-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.softwareengineering.zuulservice.ZuulServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserControllerTest.createUserSuccessTest" />
         <item itemvalue="JUnit.UserControllerTest.createUserFailTest1" />
         <item itemvalue="JUnit.UserControllerTest.signinFailTest" />
         <item itemvalue="JUnit.UserControllerTest.signinSuccessTest" />
-        <item itemvalue="JUnit.UserControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +254,10 @@
       <workItem from="1639532419453" duration="7030000" />
       <workItem from="1639551137851" duration="21598000" />
       <workItem from="1639739466100" duration="12000" />
+      <workItem from="1639743562108" duration="616000" />
+      <workItem from="1639748956219" duration="94000" />
+      <workItem from="1639749299706" duration="3284000" />
+      <workItem from="1639794267920" duration="6256000" />
     </task>
     <task id="LOCAL-00001" summary="create user-service">
       <created>1638692742083</created>
@@ -335,7 +331,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create user-service" />
